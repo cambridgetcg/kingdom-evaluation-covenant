@@ -1,0 +1,1614 @@
+[
+  {
+    "affectedPartyClasses": [
+      {
+        "accessibilityState": "NOT-ASSESSED",
+        "burdenState": "NOT-ASSESSED",
+        "compensationState": "NOT-ASSESSED",
+        "digitalExclusionRisk": "A future digital-only protocol could exclude people who cannot or do not use digital services.",
+        "dissentPreserved": true,
+        "engagementState": "NOT-DESIGNED",
+        "howAffectedHypothesis": "People seeking public-service information may encounter a presentation that obscures or exposes territorial divergence.",
+        "id": "affected:four-nation-information-reader",
+        "languageState": "NOT-ASSESSED",
+        "personalRecords": false,
+        "representationState": "MAPPED-NOT-ENGAGED",
+        "roleClass": "public-service-information-reader",
+        "unrepresentedRisk": "People with low service familiarity or non-digital access needs may remain unrepresented."
+      },
+      {
+        "accessibilityState": "NOT-ASSESSED",
+        "burdenState": "NOT-ASSESSED",
+        "compensationState": "NOT-ASSESSED",
+        "digitalExclusionRisk": "A digital protocol could miss frontline interactions occurring through assisted or offline channels.",
+        "dissentPreserved": true,
+        "engagementState": "NOT-DESIGNED",
+        "howAffectedHypothesis": "Frontline service workers may need to explain territorial distinctions or absorb confusion created by an undifferentiated view.",
+        "id": "affected:four-nation-frontline-service",
+        "languageState": "NOT-ASSESSED",
+        "personalRecords": false,
+        "representationState": "MAPPED-NOT-ENGAGED",
+        "roleClass": "frontline-service-worker",
+        "unrepresentedRisk": "Different delivery settings and territories may be unevenly represented."
+      },
+      {
+        "accessibilityState": "NOT-ASSESSED",
+        "burdenState": "NOT-ASSESSED",
+        "compensationState": "NOT-ASSESSED",
+        "digitalExclusionRisk": "Online-only materials could hide access barriers rather than reveal them.",
+        "dissentPreserved": true,
+        "engagementState": "NOT-DESIGNED",
+        "howAffectedHypothesis": "Accessibility and language communities may experience different burdens from branches, matrices or undifferentiated information.",
+        "id": "affected:four-nation-access-language",
+        "languageState": "NOT-ASSESSED",
+        "personalRecords": false,
+        "representationState": "MAPPED-NOT-ENGAGED",
+        "roleClass": "accessibility-and-language-community",
+        "unrepresentedRisk": "A mapped class is not a representative voice and may omit intersecting access needs."
+      }
+    ],
+    "comparators": [
+      {
+        "assigned": false,
+        "description": "Synthetic undifferentiated proposition page retained as the business-as-usual comparison.",
+        "exposureState": "NONE",
+        "id": "comparator:four-nation-bau",
+        "implemented": false,
+        "role": "business-as-usual",
+        "selected": false,
+        "transformationOptionId": "option:four-nation-bau"
+      },
+      {
+        "assigned": false,
+        "description": "Synthetic four-branch representation held at specialist review.",
+        "exposureState": "NONE",
+        "id": "comparator:four-nation-branches",
+        "implemented": false,
+        "role": "candidate-alternative",
+        "selected": false,
+        "transformationOptionId": "option:four-nation-branches"
+      },
+      {
+        "assigned": false,
+        "description": "Synthetic comparison matrix with no competence result.",
+        "exposureState": "NONE",
+        "id": "comparator:four-nation-matrix",
+        "implemented": false,
+        "role": "candidate-alternative",
+        "selected": false,
+        "transformationOptionId": "option:four-nation-matrix"
+      }
+    ],
+    "distribution": {
+      "affectedPartyClassIds": [
+        "affected:four-nation-access-language",
+        "affected:four-nation-frontline-service",
+        "affected:four-nation-information-reader"
+      ],
+      "dimensions": [
+        "access-needs",
+        "digital-exclusion",
+        "language",
+        "service-familiarity"
+      ],
+      "territories": [
+        "England",
+        "Northern Ireland",
+        "Scotland",
+        "Wales"
+      ],
+      "unit": "territory-by-affected-party-class"
+    },
+    "evaluationQuestions": [
+      {
+        "affectedPartyClassIds": [
+          "affected:four-nation-access-language",
+          "affected:four-nation-frontline-service",
+          "affected:four-nation-information-reader"
+        ],
+        "answerState": "NOT-ANSWERED",
+        "authorityEffect": "NONE",
+        "id": "question:four-nation-process",
+        "measureIds": [
+          "measure:four-nation-accessibility-burden",
+          "measure:four-nation-branch-visibility"
+        ],
+        "result": null,
+        "text": "Could a future authorized protocol assess whether all four branches and their holds are visible, accessible and comprehensible as designed?",
+        "transformationOutcomeIds": [
+          "outcome:four-nation-divergence-visible"
+        ],
+        "type": "process"
+      },
+      {
+        "affectedPartyClassIds": [
+          "affected:four-nation-access-language",
+          "affected:four-nation-frontline-service",
+          "affected:four-nation-information-reader"
+        ],
+        "answerState": "NOT-ANSWERED",
+        "authorityEffect": "NONE",
+        "id": "question:four-nation-impact",
+        "measureIds": [
+          "measure:four-nation-unsupported-equivalence"
+        ],
+        "result": null,
+        "text": "Under a future approved design, would either alternative reduce unsupported UK-wide equivalence classifications relative to the synthetic BAU without creating competence or delivery conclusions?",
+        "transformationOutcomeIds": [
+          "outcome:four-nation-divergence-visible"
+        ],
+        "type": "impact"
+      },
+      {
+        "affectedPartyClassIds": [
+          "affected:four-nation-access-language",
+          "affected:four-nation-frontline-service",
+          "affected:four-nation-information-reader"
+        ],
+        "answerState": "NOT-ANSWERED",
+        "authorityEffect": "NONE",
+        "id": "question:four-nation-economic",
+        "measureIds": [
+          "measure:four-nation-resource-categories"
+        ],
+        "result": null,
+        "text": "What future resource, user-burden, accessibility, translation, review and maintenance categories would need assessment without producing a value-for-money conclusion?",
+        "transformationOutcomeIds": [
+          "outcome:four-nation-divergence-visible"
+        ],
+        "type": "economic"
+      }
+    ],
+    "estimands": [
+      {
+        "causalStatus": "NOT-CLAIMED",
+        "contrast": "candidate alternative minus synthetic BAU on protocol-defined unsupported-equivalence classification",
+        "estimate": null,
+        "id": "estimand:four-nation-branches-v-bau",
+        "identificationState": "NOT-ASSESSED",
+        "impactQuestionId": "question:four-nation-impact",
+        "interferenceAssumption": "NOT-ASSESSED",
+        "label": "Four-branch representation compared with undifferentiated BAU",
+        "outcomeMeasureId": "measure:four-nation-unsupported-equivalence",
+        "population": "Future authorized affected-party protocol population; not defined in Phase 0",
+        "referenceComparatorId": "comparator:four-nation-bau",
+        "timeHorizon": "NOT-DESIGNED",
+        "treatmentComparatorId": "comparator:four-nation-branches",
+        "uncertainty": null,
+        "unitOfAnalysis": "NOT-DESIGNED"
+      },
+      {
+        "causalStatus": "NOT-CLAIMED",
+        "contrast": "candidate alternative minus synthetic BAU on protocol-defined unsupported-equivalence classification",
+        "estimate": null,
+        "id": "estimand:four-nation-matrix-v-bau",
+        "identificationState": "NOT-ASSESSED",
+        "impactQuestionId": "question:four-nation-impact",
+        "interferenceAssumption": "NOT-ASSESSED",
+        "label": "Comparison matrix representation compared with undifferentiated BAU",
+        "outcomeMeasureId": "measure:four-nation-unsupported-equivalence",
+        "population": "Future authorized affected-party protocol population; not defined in Phase 0",
+        "referenceComparatorId": "comparator:four-nation-bau",
+        "timeHorizon": "NOT-DESIGNED",
+        "treatmentComparatorId": "comparator:four-nation-matrix",
+        "uncertainty": null,
+        "unitOfAnalysis": "NOT-DESIGNED"
+      }
+    ],
+    "guardrails": [
+      {
+        "breachState": "NOT-OBSERVED",
+        "forbiddenInference": "A branch or matrix cannot answer competence, equivalence or delivery-choice questions, and a missing territory cannot be treated as no difference.",
+        "id": "guardrail:four-nation-no-equivalence-or-competence",
+        "linkedMeasureIds": [
+          "measure:four-nation-unsupported-equivalence"
+        ],
+        "observationRule": "Any future protocol must preserve all four territory states and separately flag competence, equivalence or delivery inferences.",
+        "protectsAgainst": [
+          "causal:four-nation-negative"
+        ],
+        "result": null,
+        "stopsInterpretation": true,
+        "threshold": null
+      }
+    ],
+    "humanGates": [
+      {
+        "authorityEffect": "NONE",
+        "authorityOutsideSystem": true,
+        "completed": false,
+        "id": "gate:covenant-four-nation-independent-design-review",
+        "kind": "independent-design-reviewer",
+        "required": true
+      },
+      {
+        "authorityEffect": "NONE",
+        "authorityOutsideSystem": true,
+        "completed": false,
+        "id": "gate:covenant-four-nation-analytical-qa",
+        "kind": "analytical-qa-assurer-distinct-from-analyst",
+        "required": true
+      },
+      {
+        "authorityEffect": "NONE",
+        "authorityOutsideSystem": true,
+        "completed": false,
+        "id": "gate:covenant-four-nation-privacy-ethics-rights",
+        "kind": "privacy-ethics-rights-review",
+        "required": true
+      },
+      {
+        "authorityEffect": "NONE",
+        "authorityOutsideSystem": true,
+        "completed": false,
+        "id": "gate:covenant-four-nation-affected-party-review",
+        "kind": "affected-party-accessibility-distribution-review",
+        "required": true
+      },
+      {
+        "authorityEffect": "NONE",
+        "authorityOutsideSystem": true,
+        "completed": false,
+        "id": "gate:four-nation-competence-review",
+        "kind": "inherited-transformation-domain-gate",
+        "required": true
+      },
+      {
+        "authorityEffect": "NONE",
+        "authorityOutsideSystem": true,
+        "completed": false,
+        "id": "gate:four-nation-service-review",
+        "kind": "inherited-transformation-domain-gate",
+        "required": true
+      }
+    ],
+    "id": "design:four-nation-information-orientation",
+    "measures": [
+      {
+        "authorityEffect": "NONE",
+        "collectionMethodState": "SYNTHETIC-PROTOCOL-ONLY",
+        "construct": "visibility of four separate territorial branches and their holds",
+        "definition": "A future categorical protocol would record whether England, Northern Ireland, Scotland and Wales are separately visible and held from competence or delivery conclusion.",
+        "definitionFrozen": false,
+        "denominatorDefinition": null,
+        "gamingHazardIds": [],
+        "guardrailIds": [],
+        "id": "measure:four-nation-branch-visibility",
+        "label": "Four-branch visibility protocol",
+        "limitations": "No observation, participant or territory assessment exists in Phase 0.",
+        "numeratorDefinition": null,
+        "population": "NOT-DESIGNED",
+        "questionIds": [
+          "question:four-nation-process"
+        ],
+        "role": "process",
+        "sourceRefs": [],
+        "targetStatus": "NOT-A-TARGET",
+        "unit": "categorical-protocol-observation",
+        "value": null,
+        "window": "NOT-DESIGNED"
+      },
+      {
+        "authorityEffect": "NONE",
+        "collectionMethodState": "NOT-DESIGNED",
+        "construct": "future accessibility and comprehension burden",
+        "definition": "A future qualitative protocol could preserve territory, access, language and service-familiarity burdens without converting them to a score.",
+        "definitionFrozen": false,
+        "denominatorDefinition": null,
+        "gamingHazardIds": [],
+        "guardrailIds": [],
+        "id": "measure:four-nation-accessibility-burden",
+        "label": "Accessibility and comprehension burden themes",
+        "limitations": "No feedback, testimony or personal record exists in Phase 0.",
+        "numeratorDefinition": null,
+        "population": "NOT-DESIGNED",
+        "questionIds": [
+          "question:four-nation-process"
+        ],
+        "role": "qualitative",
+        "sourceRefs": [],
+        "targetStatus": "NOT-A-TARGET",
+        "unit": "future-non-personal-thematic-protocol",
+        "value": null,
+        "window": "NOT-DESIGNED"
+      },
+      {
+        "authorityEffect": "NONE",
+        "collectionMethodState": "SYNTHETIC-PROTOCOL-ONLY",
+        "construct": "unsupported equivalence classification",
+        "definition": "A future preregistered categorical protocol would classify unsupported UK-wide equivalence in synthetic scenarios without measuring competence or choosing delivery.",
+        "definitionFrozen": false,
+        "denominatorDefinition": null,
+        "gamingHazardIds": [
+          "hazard:four-nation-equivalence"
+        ],
+        "guardrailIds": [
+          "guardrail:four-nation-no-equivalence-or-competence"
+        ],
+        "id": "measure:four-nation-unsupported-equivalence",
+        "label": "Unsupported-equivalence classification",
+        "limitations": "Classification rules, sample, assignment and data are absent; no effect can be estimated.",
+        "numeratorDefinition": null,
+        "population": "NOT-DESIGNED",
+        "questionIds": [
+          "question:four-nation-impact"
+        ],
+        "role": "outcome",
+        "sourceRefs": [],
+        "targetStatus": "NOT-A-TARGET",
+        "unit": "categorical-protocol-observation",
+        "value": null,
+        "window": "NOT-DESIGNED"
+      },
+      {
+        "authorityEffect": "NONE",
+        "collectionMethodState": "NOT-DESIGNED",
+        "construct": "resource and burden categories",
+        "definition": "Future assessment categories include authorship, specialist review, accessibility, translation, maintenance and user burden; no amount is defined.",
+        "definitionFrozen": false,
+        "denominatorDefinition": null,
+        "gamingHazardIds": [],
+        "guardrailIds": [],
+        "id": "measure:four-nation-resource-categories",
+        "label": "Four-nation resource categories",
+        "limitations": "No quantities, prices, benefits, discounting or distributional weights exist.",
+        "numeratorDefinition": null,
+        "population": "NOT-DESIGNED",
+        "questionIds": [
+          "question:four-nation-economic"
+        ],
+        "role": "economic",
+        "sourceRefs": [],
+        "targetStatus": "NOT-A-TARGET",
+        "unit": "category-presence-only-no-amount",
+        "value": null,
+        "window": "NOT-DESIGNED"
+      }
+    ],
+    "purpose": "Freeze what a future evaluation would need to learn about synthetic four-nation information representations before any data, result, option selection, competence conclusion or delivery choice exists.",
+    "stopRules": [
+      {
+        "automatic": false,
+        "authorityEffect": "NONE",
+        "correctionOrWithdrawalState": "NOT-ACTIVATED",
+        "effect": "STOP-INTERPRETATION",
+        "id": "stop:four-nation-missing-territory",
+        "observed": false,
+        "owner": "OUTSIDE-SYSTEM",
+        "trigger": "Any critical territory is unobserved, collapsed or treated as zero difference."
+      },
+      {
+        "automatic": false,
+        "authorityEffect": "NONE",
+        "correctionOrWithdrawalState": "NOT-ACTIVATED",
+        "effect": "STOP-INTERPRETATION",
+        "id": "stop:four-nation-competence-inference",
+        "observed": false,
+        "owner": "OUTSIDE-SYSTEM",
+        "trigger": "Any representation is interpreted as a competence, equivalence or delivery answer."
+      },
+      {
+        "automatic": false,
+        "authorityEffect": "NONE",
+        "correctionOrWithdrawalState": "NOT-ACTIVATED",
+        "effect": "PAUSE-FUTURE-DESIGN-REVIEW",
+        "id": "stop:four-nation-lineage-drift",
+        "observed": false,
+        "owner": "OUTSIDE-SYSTEM",
+        "trigger": "Any frozen Transformation, dossier, proposition, option, outcome, node or gate receipt drifts."
+      }
+    ],
+    "theoryBinding": {
+      "assumptionNodeIds": [
+        "causal:four-nation-assumption"
+      ],
+      "claimsCausalTruth": false,
+      "copiedNarrative": false,
+      "desiredOutcomeId": "outcome:four-nation-divergence-visible",
+      "evaluationNeedNodeId": "causal:four-nation-evaluation",
+      "negativePathwayNodeIds": [
+        "causal:four-nation-negative"
+      ],
+      "optionToOutputEdges": [
+        {
+          "edgeId": "causal-edge:four-nation-bau-output",
+          "fromId": "causal:four-nation-bau",
+          "toId": "causal:four-nation-bau-state"
+        },
+        {
+          "edgeId": "causal-edge:four-nation-branches-output",
+          "fromId": "causal:four-nation-alt-branches",
+          "toId": "causal:four-nation-branches-output"
+        },
+        {
+          "edgeId": "causal-edge:four-nation-matrix-output",
+          "fromId": "causal:four-nation-alt-matrix",
+          "toId": "causal:four-nation-matrix-output"
+        }
+      ],
+      "tested": false,
+      "theoryValidated": false
+    },
+    "title": "Synthetic four-nation information-orientation evaluation design",
+    "transformationBinding": {
+      "assumptionNodeIds": [
+        "causal:four-nation-assumption"
+      ],
+      "dossierCanonicalReceipt": "sha256:251d9dc081d182ff7d0a843c7139f882f3b76551591f99253cdd63877cc47e64",
+      "dossierId": "dossier:four-nation-public-service-information",
+      "evaluationNeedNodeId": "causal:four-nation-evaluation",
+      "humanGateIds": [
+        "gate:four-nation-competence-review",
+        "gate:four-nation-service-review"
+      ],
+      "negativePathwayNodeIds": [
+        "causal:four-nation-negative"
+      ],
+      "optionIds": [
+        "option:four-nation-bau",
+        "option:four-nation-branches",
+        "option:four-nation-matrix"
+      ],
+      "propositionCanonicalReceipt": "sha256:f86be1c08e235fc20ea9727356ca1676bd8563d092de987ff901ba2d63fa0a84",
+      "transformationOutcomeId": "outcome:four-nation-divergence-visible",
+      "useAsEvidence": false
+    }
+  },
+  {
+    "affectedPartyClasses": [
+      {
+        "accessibilityState": "NOT-ASSESSED",
+        "burdenState": "NOT-ASSESSED",
+        "compensationState": "NOT-ASSESSED",
+        "digitalExclusionRisk": "Digital-only notice research could exclude people using paper, assisted or representative channels.",
+        "dissentPreserved": true,
+        "engagementState": "NOT-DESIGNED",
+        "howAffectedHypothesis": "A person reading a synthetic decision notice could misunderstand parallel complaint, review, appeal or judicial-review labels.",
+        "id": "affected:notice-reader",
+        "languageState": "NOT-ASSESSED",
+        "personalRecords": false,
+        "representationState": "MAPPED-NOT-ENGAGED",
+        "roleClass": "synthetic-notice-reader",
+        "unrepresentedRisk": "People with low literacy, language, disability or prior-system familiarity differences may remain unrepresented."
+      },
+      {
+        "accessibilityState": "NOT-ASSESSED",
+        "burdenState": "NOT-ASSESSED",
+        "compensationState": "NOT-ASSESSED",
+        "digitalExclusionRisk": "Digital-only research could miss assisted advice and paper-based contexts.",
+        "dissentPreserved": true,
+        "engagementState": "NOT-DESIGNED",
+        "howAffectedHypothesis": "Future advisers or support workers could experience changed explanation burdens without acquiring decision authority.",
+        "id": "affected:notice-support-adviser",
+        "languageState": "NOT-ASSESSED",
+        "personalRecords": false,
+        "representationState": "MAPPED-NOT-ENGAGED",
+        "roleClass": "support-and-advice-worker",
+        "unrepresentedRisk": "Different professional and voluntary support contexts may be omitted."
+      },
+      {
+        "accessibilityState": "NOT-ASSESSED",
+        "burdenState": "NOT-ASSESSED",
+        "compensationState": "NOT-ASSESSED",
+        "digitalExclusionRisk": "Prototype access could be biased toward digitally confident participants.",
+        "dissentPreserved": true,
+        "engagementState": "NOT-DESIGNED",
+        "howAffectedHypothesis": "Accessibility and language communities may encounter distinct comprehension and confidence harms.",
+        "id": "affected:notice-access-language",
+        "languageState": "NOT-ASSESSED",
+        "personalRecords": false,
+        "representationState": "MAPPED-NOT-ENGAGED",
+        "roleClass": "accessibility-and-language-community",
+        "unrepresentedRisk": "Mapping cannot substitute for accessible engagement or representation."
+      }
+    ],
+    "comparators": [
+      {
+        "assigned": false,
+        "description": "Synthetic generic explanatory-content pattern retained as BAU.",
+        "exposureState": "NONE",
+        "id": "comparator:notice-bau",
+        "implemented": false,
+        "role": "business-as-usual",
+        "selected": false,
+        "transformationOptionId": "option:notice-bau"
+      },
+      {
+        "assigned": false,
+        "description": "Synthetic layered explanatory content with uncertainty labels.",
+        "exposureState": "NONE",
+        "id": "comparator:notice-layered",
+        "implemented": false,
+        "role": "candidate-alternative",
+        "selected": false,
+        "transformationOptionId": "option:notice-layered"
+      },
+      {
+        "assigned": false,
+        "description": "Synthetic non-directive route-distinction map.",
+        "exposureState": "NONE",
+        "id": "comparator:notice-route-map",
+        "implemented": false,
+        "role": "candidate-alternative",
+        "selected": false,
+        "transformationOptionId": "option:notice-route-map"
+      }
+    ],
+    "distribution": {
+      "affectedPartyClassIds": [
+        "affected:notice-access-language",
+        "affected:notice-reader",
+        "affected:notice-support-adviser"
+      ],
+      "dimensions": [
+        "access-needs",
+        "digital-exclusion",
+        "language-and-literacy",
+        "route-familiarity"
+      ],
+      "territories": [
+        "United Kingdom"
+      ],
+      "unit": "affected-party-class-by-access-dimension"
+    },
+    "evaluationQuestions": [
+      {
+        "affectedPartyClassIds": [
+          "affected:notice-access-language",
+          "affected:notice-reader",
+          "affected:notice-support-adviser"
+        ],
+        "answerState": "NOT-ANSWERED",
+        "authorityEffect": "NONE",
+        "id": "question:notice-process",
+        "measureIds": [
+          "measure:notice-accessibility-burden",
+          "measure:notice-route-visibility"
+        ],
+        "result": null,
+        "text": "Could a future authorized protocol assess whether complaint, review, tribunal and judicial-review labels remain visibly separate, accessible and non-directive?",
+        "transformationOutcomeIds": [
+          "outcome:notice-route-distinction"
+        ],
+        "type": "process"
+      },
+      {
+        "affectedPartyClassIds": [
+          "affected:notice-access-language",
+          "affected:notice-reader",
+          "affected:notice-support-adviser"
+        ],
+        "answerState": "NOT-ANSWERED",
+        "authorityEffect": "NONE",
+        "id": "question:notice-impact",
+        "measureIds": [
+          "measure:notice-route-conflation",
+          "measure:notice-unsupported-deadline-assurance"
+        ],
+        "result": null,
+        "text": "Under a future approved design, would either alternative reduce route conflation or unsupported deadline assurance relative to synthetic BAU without identifying a correct route or legal effect?",
+        "transformationOutcomeIds": [
+          "outcome:notice-route-distinction"
+        ],
+        "type": "impact"
+      },
+      {
+        "affectedPartyClassIds": [
+          "affected:notice-access-language",
+          "affected:notice-reader",
+          "affected:notice-support-adviser"
+        ],
+        "answerState": "NOT-ANSWERED",
+        "authorityEffect": "NONE",
+        "id": "question:notice-economic",
+        "measureIds": [
+          "measure:notice-resource-categories"
+        ],
+        "result": null,
+        "text": "What future authoring, maintenance, staff, accessibility and user-burden categories would need assessment without producing a value-for-money conclusion?",
+        "transformationOutcomeIds": [
+          "outcome:notice-route-distinction"
+        ],
+        "type": "economic"
+      }
+    ],
+    "estimands": [
+      {
+        "causalStatus": "NOT-CLAIMED",
+        "contrast": "candidate alternative minus synthetic BAU on protocol-defined route-conflation classification",
+        "estimate": null,
+        "id": "estimand:notice-layered-v-bau",
+        "identificationState": "NOT-ASSESSED",
+        "impactQuestionId": "question:notice-impact",
+        "interferenceAssumption": "NOT-ASSESSED",
+        "label": "Layered explanation compared with generic BAU",
+        "outcomeMeasureId": "measure:notice-route-conflation",
+        "population": "Future authorized synthetic-notice protocol population; not defined in Phase 0",
+        "referenceComparatorId": "comparator:notice-bau",
+        "timeHorizon": "NOT-DESIGNED",
+        "treatmentComparatorId": "comparator:notice-layered",
+        "uncertainty": null,
+        "unitOfAnalysis": "NOT-DESIGNED"
+      },
+      {
+        "causalStatus": "NOT-CLAIMED",
+        "contrast": "candidate alternative minus synthetic BAU on protocol-defined route-conflation classification",
+        "estimate": null,
+        "id": "estimand:notice-route-map-v-bau",
+        "identificationState": "NOT-ASSESSED",
+        "impactQuestionId": "question:notice-impact",
+        "interferenceAssumption": "NOT-ASSESSED",
+        "label": "Route-distinction map compared with generic BAU",
+        "outcomeMeasureId": "measure:notice-route-conflation",
+        "population": "Future authorized synthetic-notice protocol population; not defined in Phase 0",
+        "referenceComparatorId": "comparator:notice-bau",
+        "timeHorizon": "NOT-DESIGNED",
+        "treatmentComparatorId": "comparator:notice-route-map",
+        "uncertainty": null,
+        "unitOfAnalysis": "NOT-DESIGNED"
+      },
+      {
+        "causalStatus": "NOT-CLAIMED",
+        "contrast": "candidate alternative minus synthetic BAU on protocol-defined unsupported deadline-assurance classification",
+        "estimate": null,
+        "id": "estimand:notice-layered-deadline-v-bau",
+        "identificationState": "NOT-ASSESSED",
+        "impactQuestionId": "question:notice-impact",
+        "interferenceAssumption": "NOT-ASSESSED",
+        "label": "Unsupported deadline-assurance classification for layered explanation compared with generic BAU",
+        "outcomeMeasureId": "measure:notice-unsupported-deadline-assurance",
+        "population": "Future authorized synthetic-notice protocol population; not defined in Phase 0",
+        "referenceComparatorId": "comparator:notice-bau",
+        "timeHorizon": "NOT-DESIGNED",
+        "treatmentComparatorId": "comparator:notice-layered",
+        "uncertainty": null,
+        "unitOfAnalysis": "NOT-DESIGNED"
+      },
+      {
+        "causalStatus": "NOT-CLAIMED",
+        "contrast": "candidate alternative minus synthetic BAU on protocol-defined unsupported deadline-assurance classification",
+        "estimate": null,
+        "id": "estimand:notice-route-map-deadline-v-bau",
+        "identificationState": "NOT-ASSESSED",
+        "impactQuestionId": "question:notice-impact",
+        "interferenceAssumption": "NOT-ASSESSED",
+        "label": "Unsupported deadline-assurance classification for route map compared with generic BAU",
+        "outcomeMeasureId": "measure:notice-unsupported-deadline-assurance",
+        "population": "Future authorized synthetic-notice protocol population; not defined in Phase 0",
+        "referenceComparatorId": "comparator:notice-bau",
+        "timeHorizon": "NOT-DESIGNED",
+        "treatmentComparatorId": "comparator:notice-route-map",
+        "uncertainty": null,
+        "unitOfAnalysis": "NOT-DESIGNED"
+      }
+    ],
+    "guardrails": [
+      {
+        "breachState": "NOT-OBSERVED",
+        "forbiddenInference": "A route label or distinction cannot recommend a route or determine eligibility, liability, rights or legal effect.",
+        "id": "guardrail:notice-no-route-or-legal-inference",
+        "linkedMeasureIds": [
+          "measure:notice-route-conflation"
+        ],
+        "observationRule": "Any future protocol must separately flag recommendation, eligibility, liability and legal-effect inferences and stop interpretation if they appear.",
+        "protectsAgainst": [
+          "causal:notice-negative"
+        ],
+        "result": null,
+        "stopsInterpretation": true,
+        "threshold": null
+      },
+      {
+        "breachState": "NOT-OBSERVED",
+        "forbiddenInference": "An uncertainty label or route distinction cannot provide a deadline or deadline assurance.",
+        "id": "guardrail:notice-no-deadline-assurance",
+        "linkedMeasureIds": [
+          "measure:notice-unsupported-deadline-assurance"
+        ],
+        "observationRule": "Any future protocol must stop interpretation on a deadline, correct-route, advice or case-specific inference.",
+        "protectsAgainst": [
+          "causal:notice-negative"
+        ],
+        "result": null,
+        "stopsInterpretation": true,
+        "threshold": null
+      }
+    ],
+    "humanGates": [
+      {
+        "authorityEffect": "NONE",
+        "authorityOutsideSystem": true,
+        "completed": false,
+        "id": "gate:covenant-notice-independent-design-review",
+        "kind": "independent-design-reviewer",
+        "required": true
+      },
+      {
+        "authorityEffect": "NONE",
+        "authorityOutsideSystem": true,
+        "completed": false,
+        "id": "gate:covenant-notice-analytical-qa",
+        "kind": "analytical-qa-assurer-distinct-from-analyst",
+        "required": true
+      },
+      {
+        "authorityEffect": "NONE",
+        "authorityOutsideSystem": true,
+        "completed": false,
+        "id": "gate:covenant-notice-privacy-ethics-rights",
+        "kind": "privacy-ethics-rights-review",
+        "required": true
+      },
+      {
+        "authorityEffect": "NONE",
+        "authorityOutsideSystem": true,
+        "completed": false,
+        "id": "gate:covenant-notice-affected-party-review",
+        "kind": "affected-party-accessibility-distribution-review",
+        "required": true
+      },
+      {
+        "authorityEffect": "NONE",
+        "authorityOutsideSystem": true,
+        "completed": false,
+        "id": "gate:notice-accessibility-research",
+        "kind": "inherited-transformation-domain-gate",
+        "required": true
+      },
+      {
+        "authorityEffect": "NONE",
+        "authorityOutsideSystem": true,
+        "completed": false,
+        "id": "gate:notice-specialist-tax-legal-review",
+        "kind": "inherited-transformation-domain-gate",
+        "required": true
+      }
+    ],
+    "id": "design:hmrc-notice-route-orientation",
+    "measures": [
+      {
+        "authorityEffect": "NONE",
+        "collectionMethodState": "SYNTHETIC-PROTOCOL-ONLY",
+        "construct": "visible separation of route labels and uncertainty holds",
+        "definition": "A future categorical protocol would record whether complaint, review, tribunal and judicial-review labels remain separate and non-directive.",
+        "definitionFrozen": false,
+        "denominatorDefinition": null,
+        "gamingHazardIds": [],
+        "guardrailIds": [],
+        "id": "measure:notice-route-visibility",
+        "label": "Route-label visibility protocol",
+        "limitations": "No notice, participant, route or observation exists in Phase 0.",
+        "numeratorDefinition": null,
+        "population": "NOT-DESIGNED",
+        "questionIds": [
+          "question:notice-process"
+        ],
+        "role": "process",
+        "sourceRefs": [],
+        "targetStatus": "NOT-A-TARGET",
+        "unit": "categorical-protocol-observation",
+        "value": null,
+        "window": "NOT-DESIGNED"
+      },
+      {
+        "authorityEffect": "NONE",
+        "collectionMethodState": "NOT-DESIGNED",
+        "construct": "future accessibility and comprehension burden",
+        "definition": "A future qualitative protocol could preserve language, literacy, disability, digital and familiarity burdens without converting them to a score.",
+        "definitionFrozen": false,
+        "denominatorDefinition": null,
+        "gamingHazardIds": [],
+        "guardrailIds": [],
+        "id": "measure:notice-accessibility-burden",
+        "label": "Notice accessibility and burden themes",
+        "limitations": "No feedback, testimony, case or personal record exists in Phase 0.",
+        "numeratorDefinition": null,
+        "population": "NOT-DESIGNED",
+        "questionIds": [
+          "question:notice-process"
+        ],
+        "role": "qualitative",
+        "sourceRefs": [],
+        "targetStatus": "NOT-A-TARGET",
+        "unit": "future-non-personal-thematic-protocol",
+        "value": null,
+        "window": "NOT-DESIGNED"
+      },
+      {
+        "authorityEffect": "NONE",
+        "collectionMethodState": "SYNTHETIC-PROTOCOL-ONLY",
+        "construct": "route-conflation classification",
+        "definition": "A future preregistered categorical protocol would distinguish conflation from route visibility without identifying a correct route.",
+        "definitionFrozen": false,
+        "denominatorDefinition": null,
+        "gamingHazardIds": [
+          "hazard:notice-route-recommendation"
+        ],
+        "guardrailIds": [
+          "guardrail:notice-no-route-or-legal-inference"
+        ],
+        "id": "measure:notice-route-conflation",
+        "label": "Route-conflation classification",
+        "limitations": "Classification rules, sample, assignment and data are absent; no effect can be estimated.",
+        "numeratorDefinition": null,
+        "population": "NOT-DESIGNED",
+        "questionIds": [
+          "question:notice-impact"
+        ],
+        "role": "outcome",
+        "sourceRefs": [],
+        "targetStatus": "NOT-A-TARGET",
+        "unit": "categorical-protocol-observation",
+        "value": null,
+        "window": "NOT-DESIGNED"
+      },
+      {
+        "authorityEffect": "NONE",
+        "collectionMethodState": "SYNTHETIC-PROTOCOL-ONLY",
+        "construct": "unsupported deadline-assurance classification",
+        "definition": "A future preregistered categorical protocol would flag deadline assurance or timing inference without determining any deadline.",
+        "definitionFrozen": false,
+        "denominatorDefinition": null,
+        "gamingHazardIds": [
+          "hazard:notice-deadline-inference"
+        ],
+        "guardrailIds": [
+          "guardrail:notice-no-deadline-assurance"
+        ],
+        "id": "measure:notice-unsupported-deadline-assurance",
+        "label": "Unsupported deadline-assurance classification",
+        "limitations": "No real deadline, case, notice, outcome or legal rule is represented.",
+        "numeratorDefinition": null,
+        "population": "NOT-DESIGNED",
+        "questionIds": [
+          "question:notice-impact"
+        ],
+        "role": "outcome",
+        "sourceRefs": [],
+        "targetStatus": "NOT-A-TARGET",
+        "unit": "categorical-protocol-observation",
+        "value": null,
+        "window": "NOT-DESIGNED"
+      },
+      {
+        "authorityEffect": "NONE",
+        "collectionMethodState": "NOT-DESIGNED",
+        "construct": "resource and burden categories",
+        "definition": "Future categories include authoring, specialist review, accessibility, maintenance, staff burden and user burden; no amount is defined.",
+        "definitionFrozen": false,
+        "denominatorDefinition": null,
+        "gamingHazardIds": [],
+        "guardrailIds": [],
+        "id": "measure:notice-resource-categories",
+        "label": "Notice resource categories",
+        "limitations": "No quantities, prices, benefits, discounting or distributional weights exist.",
+        "numeratorDefinition": null,
+        "population": "NOT-DESIGNED",
+        "questionIds": [
+          "question:notice-economic"
+        ],
+        "role": "economic",
+        "sourceRefs": [],
+        "targetStatus": "NOT-A-TARGET",
+        "unit": "category-presence-only-no-amount",
+        "value": null,
+        "window": "NOT-DESIGNED"
+      }
+    ],
+    "purpose": "Freeze what a future evaluation would need to learn about synthetic notice-route representations before any data, result, correct-route inference, legal effect or option selection exists.",
+    "stopRules": [
+      {
+        "automatic": false,
+        "authorityEffect": "NONE",
+        "correctionOrWithdrawalState": "NOT-ACTIVATED",
+        "effect": "STOP-INTERPRETATION",
+        "id": "stop:notice-personal-or-case-data",
+        "observed": false,
+        "owner": "OUTSIDE-SYSTEM",
+        "trigger": "Any actual notice, case, identity, deadline, liability, eligibility or personal data enters scope."
+      },
+      {
+        "automatic": false,
+        "authorityEffect": "NONE",
+        "correctionOrWithdrawalState": "NOT-ACTIVATED",
+        "effect": "STOP-INTERPRETATION",
+        "id": "stop:notice-advice-or-deadline-inference",
+        "observed": false,
+        "owner": "OUTSIDE-SYSTEM",
+        "trigger": "Any recommendation, advice, correct-route, deadline, eligibility, liability or legal-effect inference appears."
+      },
+      {
+        "automatic": false,
+        "authorityEffect": "NONE",
+        "correctionOrWithdrawalState": "NOT-ACTIVATED",
+        "effect": "STOP-INTERPRETATION",
+        "id": "stop:notice-critical-class-missing",
+        "observed": false,
+        "owner": "OUTSIDE-SYSTEM",
+        "trigger": "A critical access, language, literacy, digital or familiarity class is unobserved and treated as no effect."
+      },
+      {
+        "automatic": false,
+        "authorityEffect": "NONE",
+        "correctionOrWithdrawalState": "NOT-ACTIVATED",
+        "effect": "PAUSE-FUTURE-DESIGN-REVIEW",
+        "id": "stop:notice-lineage-drift",
+        "observed": false,
+        "owner": "OUTSIDE-SYSTEM",
+        "trigger": "Any frozen Transformation, dossier, proposition, option, outcome, node or gate receipt drifts."
+      }
+    ],
+    "theoryBinding": {
+      "assumptionNodeIds": [
+        "causal:notice-assumption"
+      ],
+      "claimsCausalTruth": false,
+      "copiedNarrative": false,
+      "desiredOutcomeId": "outcome:notice-route-distinction",
+      "evaluationNeedNodeId": "causal:notice-evaluation",
+      "negativePathwayNodeIds": [
+        "causal:notice-negative"
+      ],
+      "optionToOutputEdges": [
+        {
+          "edgeId": "causal-edge:notice-bau-output",
+          "fromId": "causal:notice-bau",
+          "toId": "causal:notice-bau-state"
+        },
+        {
+          "edgeId": "causal-edge:notice-layered-output",
+          "fromId": "causal:notice-alt-layered",
+          "toId": "causal:notice-layered-output"
+        },
+        {
+          "edgeId": "causal-edge:notice-route-output",
+          "fromId": "causal:notice-alt-route-map",
+          "toId": "causal:notice-route-output"
+        }
+      ],
+      "tested": false,
+      "theoryValidated": false
+    },
+    "title": "Synthetic HMRC notice-route orientation evaluation design",
+    "transformationBinding": {
+      "assumptionNodeIds": [
+        "causal:notice-assumption"
+      ],
+      "dossierCanonicalReceipt": "sha256:f891d80e614160f64061231d592af567e0800a55a232e01bbcddaf406f17ff29",
+      "dossierId": "dossier:hmrc-decision-notice-explanatory-content",
+      "evaluationNeedNodeId": "causal:notice-evaluation",
+      "humanGateIds": [
+        "gate:notice-accessibility-research",
+        "gate:notice-specialist-tax-legal-review"
+      ],
+      "negativePathwayNodeIds": [
+        "causal:notice-negative"
+      ],
+      "optionIds": [
+        "option:notice-bau",
+        "option:notice-layered",
+        "option:notice-route-map"
+      ],
+      "propositionCanonicalReceipt": "sha256:aec1cdc5a5f0b258667476a24b707fe48ee8fea8aeb613d441f38b3d6130b850",
+      "transformationOutcomeId": "outcome:notice-route-distinction",
+      "useAsEvidence": false
+    }
+  },
+  {
+    "affectedPartyClasses": [
+      {
+        "accessibilityState": "NOT-ASSESSED",
+        "burdenState": "NOT-ASSESSED",
+        "compensationState": "NOT-ASSESSED",
+        "digitalExclusionRisk": "A digital-only map could exclude people who rely on assisted or non-digital explanations.",
+        "dissentPreserved": true,
+        "engagementState": "NOT-DESIGNED",
+        "howAffectedHypothesis": "General readers may gain or lose orientation when public-money categories are separated or visually linked.",
+        "id": "affected:money-general-reader",
+        "languageState": "NOT-ASSESSED",
+        "personalRecords": false,
+        "representationState": "MAPPED-NOT-ENGAGED",
+        "roleClass": "general-public-reader",
+        "unrepresentedRisk": "Low financial familiarity, language and access differences may be omitted."
+      },
+      {
+        "accessibilityState": "NOT-ASSESSED",
+        "burdenState": "NOT-ASSESSED",
+        "compensationState": "NOT-ASSESSED",
+        "digitalExclusionRisk": "Digital prototypes could omit established offline scrutiny practices.",
+        "dissentPreserved": true,
+        "engagementState": "NOT-DESIGNED",
+        "howAffectedHypothesis": "Oversight and audit role classes may encounter false authority or traceability implications in a linked representation.",
+        "id": "affected:money-oversight-audit",
+        "languageState": "NOT-ASSESSED",
+        "personalRecords": false,
+        "representationState": "MAPPED-NOT-ENGAGED",
+        "roleClass": "oversight-and-audit-reader",
+        "unrepresentedRisk": "Different scrutiny functions and technical practices may remain unmapped."
+      },
+      {
+        "accessibilityState": "NOT-ASSESSED",
+        "burdenState": "NOT-ASSESSED",
+        "compensationState": "NOT-ASSESSED",
+        "digitalExclusionRisk": "A web-only view may not reflect documentary and archival research paths.",
+        "dissentPreserved": true,
+        "engagementState": "NOT-DESIGNED",
+        "howAffectedHypothesis": "Parliamentary, journalistic and research role classes may reuse distinctions while risking overstatement of traceability.",
+        "id": "affected:money-parliamentary-journalist-research",
+        "languageState": "NOT-ASSESSED",
+        "personalRecords": false,
+        "representationState": "MAPPED-NOT-ENGAGED",
+        "roleClass": "parliamentary-journalistic-and-research-reader",
+        "unrepresentedRisk": "Role-class mapping cannot represent institutions or individuals."
+      },
+      {
+        "accessibilityState": "NOT-ASSESSED",
+        "burdenState": "NOT-ASSESSED",
+        "compensationState": "NOT-ASSESSED",
+        "digitalExclusionRisk": "Complex linked maps may intensify exclusion despite being publicly reachable.",
+        "dissentPreserved": true,
+        "engagementState": "NOT-DESIGNED",
+        "howAffectedHypothesis": "People with low financial familiarity or access needs may carry disproportionate comprehension burden.",
+        "id": "affected:money-low-finance-access",
+        "languageState": "NOT-ASSESSED",
+        "personalRecords": false,
+        "representationState": "MAPPED-NOT-ENGAGED",
+        "roleClass": "low-financial-familiarity-and-access-needs-reader",
+        "unrepresentedRisk": "Aggregate comprehension could erase this class's harms or missingness."
+      }
+    ],
+    "comparators": [
+      {
+        "assigned": false,
+        "description": "Synthetic dispersed source-linked explanations retained as BAU.",
+        "exposureState": "NONE",
+        "id": "comparator:money-bau",
+        "implemented": false,
+        "role": "business-as-usual",
+        "selected": false,
+        "transformationOptionId": "option:money-bau"
+      },
+      {
+        "assigned": false,
+        "description": "Synthetic static distinctions glossary.",
+        "exposureState": "NONE",
+        "id": "comparator:money-glossary",
+        "implemented": false,
+        "role": "candidate-alternative",
+        "selected": false,
+        "transformationOptionId": "option:money-glossary"
+      },
+      {
+        "assigned": false,
+        "description": "Synthetic source-linked category map with held unknowns.",
+        "exposureState": "NONE",
+        "id": "comparator:money-linked-map",
+        "implemented": false,
+        "role": "candidate-alternative",
+        "selected": false,
+        "transformationOptionId": "option:money-linked-map"
+      }
+    ],
+    "distribution": {
+      "affectedPartyClassIds": [
+        "affected:money-general-reader",
+        "affected:money-low-finance-access",
+        "affected:money-oversight-audit",
+        "affected:money-parliamentary-journalist-research"
+      ],
+      "dimensions": [
+        "access-needs",
+        "digital-exclusion",
+        "language",
+        "financial-system-familiarity"
+      ],
+      "territories": [
+        "United Kingdom"
+      ],
+      "unit": "affected-party-class-by-access-and-familiarity-dimension"
+    },
+    "evaluationQuestions": [
+      {
+        "affectedPartyClassIds": [
+          "affected:money-general-reader",
+          "affected:money-low-finance-access",
+          "affected:money-oversight-audit",
+          "affected:money-parliamentary-journalist-research"
+        ],
+        "answerState": "NOT-ANSWERED",
+        "authorityEffect": "NONE",
+        "id": "question:money-process",
+        "measureIds": [
+          "measure:money-accessibility-burden",
+          "measure:money-category-visibility"
+        ],
+        "result": null,
+        "text": "Could a future authorized protocol assess whether category distinctions and explicit holds are findable, accessible and comprehensible as designed?",
+        "transformationOutcomeIds": [
+          "outcome:money-category-separation"
+        ],
+        "type": "process"
+      },
+      {
+        "affectedPartyClassIds": [
+          "affected:money-general-reader",
+          "affected:money-low-finance-access",
+          "affected:money-oversight-audit",
+          "affected:money-parliamentary-journalist-research"
+        ],
+        "answerState": "NOT-ANSWERED",
+        "authorityEffect": "NONE",
+        "id": "question:money-impact",
+        "measureIds": [
+          "measure:money-category-confusion",
+          "measure:money-labelled-pound-inference"
+        ],
+        "result": null,
+        "text": "Under a future approved design, would either alternative reduce defined category collapses relative to synthetic BAU without producing authority, transaction or labelled-pound conclusions?",
+        "transformationOutcomeIds": [
+          "outcome:money-category-separation"
+        ],
+        "type": "impact"
+      },
+      {
+        "affectedPartyClassIds": [
+          "affected:money-general-reader",
+          "affected:money-low-finance-access",
+          "affected:money-oversight-audit",
+          "affected:money-parliamentary-journalist-research"
+        ],
+        "answerState": "NOT-ANSWERED",
+        "authorityEffect": "NONE",
+        "id": "question:money-economic",
+        "measureIds": [
+          "measure:money-resource-categories"
+        ],
+        "result": null,
+        "text": "What future authoring, specialist-review, maintenance, source-review and user-burden categories would need assessment without producing a value-for-money or spending conclusion?",
+        "transformationOutcomeIds": [
+          "outcome:money-category-separation"
+        ],
+        "type": "economic"
+      }
+    ],
+    "estimands": [
+      {
+        "causalStatus": "NOT-CLAIMED",
+        "contrast": "candidate alternative minus synthetic BAU on protocol-defined category-confusion classification",
+        "estimate": null,
+        "id": "estimand:money-glossary-v-bau",
+        "identificationState": "NOT-ASSESSED",
+        "impactQuestionId": "question:money-impact",
+        "interferenceAssumption": "NOT-ASSESSED",
+        "label": "Static distinctions glossary compared with dispersed BAU",
+        "outcomeMeasureId": "measure:money-category-confusion",
+        "population": "Future authorized public-money orientation protocol population; not defined in Phase 0",
+        "referenceComparatorId": "comparator:money-bau",
+        "timeHorizon": "NOT-DESIGNED",
+        "treatmentComparatorId": "comparator:money-glossary",
+        "uncertainty": null,
+        "unitOfAnalysis": "NOT-DESIGNED"
+      },
+      {
+        "causalStatus": "NOT-CLAIMED",
+        "contrast": "candidate alternative minus synthetic BAU on protocol-defined category-confusion classification",
+        "estimate": null,
+        "id": "estimand:money-linked-map-v-bau",
+        "identificationState": "NOT-ASSESSED",
+        "impactQuestionId": "question:money-impact",
+        "interferenceAssumption": "NOT-ASSESSED",
+        "label": "Source-linked category map compared with dispersed BAU",
+        "outcomeMeasureId": "measure:money-category-confusion",
+        "population": "Future authorized public-money orientation protocol population; not defined in Phase 0",
+        "referenceComparatorId": "comparator:money-bau",
+        "timeHorizon": "NOT-DESIGNED",
+        "treatmentComparatorId": "comparator:money-linked-map",
+        "uncertainty": null,
+        "unitOfAnalysis": "NOT-DESIGNED"
+      },
+      {
+        "causalStatus": "NOT-CLAIMED",
+        "contrast": "candidate alternative minus synthetic BAU on protocol-defined labelled-pound and authority-inference classification",
+        "estimate": null,
+        "id": "estimand:money-glossary-labelled-pound-v-bau",
+        "identificationState": "NOT-ASSESSED",
+        "impactQuestionId": "question:money-impact",
+        "interferenceAssumption": "NOT-ASSESSED",
+        "label": "Labelled-pound and authority-inference classification for glossary compared with dispersed BAU",
+        "outcomeMeasureId": "measure:money-labelled-pound-inference",
+        "population": "Future authorized public-money orientation protocol population; not defined in Phase 0",
+        "referenceComparatorId": "comparator:money-bau",
+        "timeHorizon": "NOT-DESIGNED",
+        "treatmentComparatorId": "comparator:money-glossary",
+        "uncertainty": null,
+        "unitOfAnalysis": "NOT-DESIGNED"
+      },
+      {
+        "causalStatus": "NOT-CLAIMED",
+        "contrast": "candidate alternative minus synthetic BAU on protocol-defined labelled-pound and authority-inference classification",
+        "estimate": null,
+        "id": "estimand:money-linked-map-labelled-pound-v-bau",
+        "identificationState": "NOT-ASSESSED",
+        "impactQuestionId": "question:money-impact",
+        "interferenceAssumption": "NOT-ASSESSED",
+        "label": "Labelled-pound and authority-inference classification for linked map compared with dispersed BAU",
+        "outcomeMeasureId": "measure:money-labelled-pound-inference",
+        "population": "Future authorized public-money orientation protocol population; not defined in Phase 0",
+        "referenceComparatorId": "comparator:money-bau",
+        "timeHorizon": "NOT-DESIGNED",
+        "treatmentComparatorId": "comparator:money-linked-map",
+        "uncertainty": null,
+        "unitOfAnalysis": "NOT-DESIGNED"
+      }
+    ],
+    "guardrails": [
+      {
+        "breachState": "NOT-OBSERVED",
+        "forbiddenInference": "A plan is not a Supply Estimate.",
+        "id": "guardrail:money-plan-not-estimate",
+        "linkedMeasureIds": [
+          "measure:money-category-confusion"
+        ],
+        "observationRule": "Any future protocol must classify this collapse separately and stop aggregate interpretation.",
+        "protectsAgainst": [
+          "causal:money-negative"
+        ],
+        "result": null,
+        "stopsInterpretation": true,
+        "threshold": null
+      },
+      {
+        "breachState": "NOT-OBSERVED",
+        "forbiddenInference": "A Supply Estimate is not an appropriation.",
+        "id": "guardrail:money-estimate-not-appropriation",
+        "linkedMeasureIds": [
+          "measure:money-category-confusion"
+        ],
+        "observationRule": "Any future protocol must classify this collapse separately and stop aggregate interpretation.",
+        "protectsAgainst": [
+          "causal:money-negative"
+        ],
+        "result": null,
+        "stopsInterpretation": true,
+        "threshold": null
+      },
+      {
+        "breachState": "NOT-OBSERVED",
+        "forbiddenInference": "An appropriation is not credit or issue.",
+        "id": "guardrail:money-appropriation-not-credit-or-issue",
+        "linkedMeasureIds": [
+          "measure:money-category-confusion"
+        ],
+        "observationRule": "Any future protocol must classify this collapse separately and stop aggregate interpretation.",
+        "protectsAgainst": [
+          "causal:money-negative"
+        ],
+        "result": null,
+        "stopsInterpretation": true,
+        "threshold": null
+      },
+      {
+        "breachState": "NOT-OBSERVED",
+        "forbiddenInference": "Issue is not outturn.",
+        "id": "guardrail:money-issue-not-outturn",
+        "linkedMeasureIds": [
+          "measure:money-category-confusion"
+        ],
+        "observationRule": "Any future protocol must classify this collapse separately and stop aggregate interpretation.",
+        "protectsAgainst": [
+          "causal:money-negative"
+        ],
+        "result": null,
+        "stopsInterpretation": true,
+        "threshold": null
+      },
+      {
+        "breachState": "NOT-OBSERVED",
+        "forbiddenInference": "Payment or settlement is not liability, spending authority or proof of spending.",
+        "id": "guardrail:money-payment-settlement-not-liability-or-spending",
+        "linkedMeasureIds": [
+          "measure:money-category-confusion",
+          "measure:money-labelled-pound-inference"
+        ],
+        "observationRule": "Any future protocol must stop on a payment, settlement, liability or spending-authority collapse.",
+        "protectsAgainst": [
+          "causal:money-negative"
+        ],
+        "result": null,
+        "stopsInterpretation": true,
+        "threshold": null
+      },
+      {
+        "breachState": "NOT-OBSERVED",
+        "forbiddenInference": "A labelled pound cannot be traced through these categories and links.",
+        "id": "guardrail:money-no-labelled-pound-trace",
+        "linkedMeasureIds": [
+          "measure:money-labelled-pound-inference"
+        ],
+        "observationRule": "Any future protocol must hold labelled-pound, transaction and authority claims as forbidden inferences.",
+        "protectsAgainst": [
+          "causal:money-negative"
+        ],
+        "result": null,
+        "stopsInterpretation": true,
+        "threshold": null
+      }
+    ],
+    "humanGates": [
+      {
+        "authorityEffect": "NONE",
+        "authorityOutsideSystem": true,
+        "completed": false,
+        "id": "gate:covenant-money-independent-design-review",
+        "kind": "independent-design-reviewer",
+        "required": true
+      },
+      {
+        "authorityEffect": "NONE",
+        "authorityOutsideSystem": true,
+        "completed": false,
+        "id": "gate:covenant-money-analytical-qa",
+        "kind": "analytical-qa-assurer-distinct-from-analyst",
+        "required": true
+      },
+      {
+        "authorityEffect": "NONE",
+        "authorityOutsideSystem": true,
+        "completed": false,
+        "id": "gate:covenant-money-privacy-ethics-rights",
+        "kind": "privacy-ethics-rights-review",
+        "required": true
+      },
+      {
+        "authorityEffect": "NONE",
+        "authorityOutsideSystem": true,
+        "completed": false,
+        "id": "gate:covenant-money-affected-party-review",
+        "kind": "affected-party-accessibility-distribution-review",
+        "required": true
+      },
+      {
+        "authorityEffect": "NONE",
+        "authorityOutsideSystem": true,
+        "completed": false,
+        "id": "gate:money-evaluation-design",
+        "kind": "inherited-transformation-domain-gate",
+        "required": true
+      },
+      {
+        "authorityEffect": "NONE",
+        "authorityOutsideSystem": true,
+        "completed": false,
+        "id": "gate:money-public-authority-review",
+        "kind": "inherited-transformation-domain-gate",
+        "required": true
+      }
+    ],
+    "id": "design:public-money-category-orientation",
+    "measures": [
+      {
+        "authorityEffect": "NONE",
+        "collectionMethodState": "SYNTHETIC-PROTOCOL-ONLY",
+        "construct": "findability of category distinctions and holds",
+        "definition": "A future categorical protocol would record whether plans, Estimates, appropriations, issue, banking, payment, settlement and outturn distinctions are findable without asserting a chain.",
+        "definitionFrozen": false,
+        "denominatorDefinition": null,
+        "gamingHazardIds": [],
+        "guardrailIds": [],
+        "id": "measure:money-category-visibility",
+        "label": "Public-money category visibility protocol",
+        "limitations": "No reader, live source, transaction, amount or observation exists in Phase 0.",
+        "numeratorDefinition": null,
+        "population": "NOT-DESIGNED",
+        "questionIds": [
+          "question:money-process"
+        ],
+        "role": "process",
+        "sourceRefs": [],
+        "targetStatus": "NOT-A-TARGET",
+        "unit": "categorical-protocol-observation",
+        "value": null,
+        "window": "NOT-DESIGNED"
+      },
+      {
+        "authorityEffect": "NONE",
+        "collectionMethodState": "NOT-DESIGNED",
+        "construct": "future comprehension and access burden",
+        "definition": "A future qualitative protocol could preserve access, language, digital and financial-familiarity burdens without a score.",
+        "definitionFrozen": false,
+        "denominatorDefinition": null,
+        "gamingHazardIds": [],
+        "guardrailIds": [],
+        "id": "measure:money-accessibility-burden",
+        "label": "Public-money accessibility and burden themes",
+        "limitations": "No feedback, testimony or personal record exists in Phase 0.",
+        "numeratorDefinition": null,
+        "population": "NOT-DESIGNED",
+        "questionIds": [
+          "question:money-process"
+        ],
+        "role": "qualitative",
+        "sourceRefs": [],
+        "targetStatus": "NOT-A-TARGET",
+        "unit": "future-non-personal-thematic-protocol",
+        "value": null,
+        "window": "NOT-DESIGNED"
+      },
+      {
+        "authorityEffect": "NONE",
+        "collectionMethodState": "SYNTHETIC-PROTOCOL-ONLY",
+        "construct": "predefined public-money category-confusion classifications",
+        "definition": "A future preregistered protocol would classify specific category collapses separately and never combine them into a total or scalar comprehension score.",
+        "definitionFrozen": false,
+        "denominatorDefinition": null,
+        "gamingHazardIds": [
+          "hazard:money-category-collapse",
+          "hazard:money-scalar-summary"
+        ],
+        "guardrailIds": [
+          "guardrail:money-appropriation-not-credit-or-issue",
+          "guardrail:money-estimate-not-appropriation",
+          "guardrail:money-issue-not-outturn",
+          "guardrail:money-payment-settlement-not-liability-or-spending",
+          "guardrail:money-plan-not-estimate"
+        ],
+        "id": "measure:money-category-confusion",
+        "label": "Frozen category-confusion classifications",
+        "limitations": "Definitions, sample, assignment and data are absent; no effect can be estimated.",
+        "numeratorDefinition": null,
+        "population": "NOT-DESIGNED",
+        "questionIds": [
+          "question:money-impact"
+        ],
+        "role": "outcome",
+        "sourceRefs": [],
+        "targetStatus": "NOT-A-TARGET",
+        "unit": "separate-categorical-protocol-observations",
+        "value": null,
+        "window": "NOT-DESIGNED"
+      },
+      {
+        "authorityEffect": "NONE",
+        "collectionMethodState": "SYNTHETIC-PROTOCOL-ONLY",
+        "construct": "unsupported labelled-pound, authority or transaction inference",
+        "definition": "A future protocol would separately flag an inference that a labelled pound, transaction, liability, authority or spending fact can be traced from the representation.",
+        "definitionFrozen": false,
+        "denominatorDefinition": null,
+        "gamingHazardIds": [
+          "hazard:money-labelled-pound-inference",
+          "hazard:money-authority-inference"
+        ],
+        "guardrailIds": [
+          "guardrail:money-no-labelled-pound-trace",
+          "guardrail:money-payment-settlement-not-liability-or-spending"
+        ],
+        "id": "measure:money-labelled-pound-inference",
+        "label": "Unsupported labelled-pound and authority inference classification",
+        "limitations": "No live financial data, amount, transaction, payment or spending authority exists.",
+        "numeratorDefinition": null,
+        "population": "NOT-DESIGNED",
+        "questionIds": [
+          "question:money-impact"
+        ],
+        "role": "outcome",
+        "sourceRefs": [],
+        "targetStatus": "NOT-A-TARGET",
+        "unit": "categorical-protocol-observation",
+        "value": null,
+        "window": "NOT-DESIGNED"
+      },
+      {
+        "authorityEffect": "NONE",
+        "collectionMethodState": "NOT-DESIGNED",
+        "construct": "resource and burden categories",
+        "definition": "Future categories include authoring, specialist review, source review, accessibility, maintenance and user burden; no amount is defined.",
+        "definitionFrozen": false,
+        "denominatorDefinition": null,
+        "gamingHazardIds": [],
+        "guardrailIds": [],
+        "id": "measure:money-resource-categories",
+        "label": "Public-money orientation resource categories",
+        "limitations": "No quantities, prices, benefits, discounting or distributional weights exist.",
+        "numeratorDefinition": null,
+        "population": "NOT-DESIGNED",
+        "questionIds": [
+          "question:money-economic"
+        ],
+        "role": "economic",
+        "sourceRefs": [],
+        "targetStatus": "NOT-A-TARGET",
+        "unit": "category-presence-only-no-amount",
+        "value": null,
+        "window": "NOT-DESIGNED"
+      }
+    ],
+    "purpose": "Freeze what a future evaluation would need to learn about synthetic public-money category representations before any data, result, authority, labelled-pound trace, transaction or option selection exists.",
+    "stopRules": [
+      {
+        "automatic": false,
+        "authorityEffect": "NONE",
+        "correctionOrWithdrawalState": "NOT-ACTIVATED",
+        "effect": "STOP-INTERPRETATION",
+        "id": "stop:money-financial-operation-inference",
+        "observed": false,
+        "owner": "OUTSIDE-SYSTEM",
+        "trigger": "Any transaction, payment, spending, liability, authority or labelled-pound trace is inferred."
+      },
+      {
+        "automatic": false,
+        "authorityEffect": "NONE",
+        "correctionOrWithdrawalState": "NOT-ACTIVATED",
+        "effect": "STOP-INTERPRETATION",
+        "id": "stop:money-critical-class-missing",
+        "observed": false,
+        "owner": "OUTSIDE-SYSTEM",
+        "trigger": "A critical access, familiarity, scrutiny or affected-party class is unobserved and treated as zero or no effect."
+      },
+      {
+        "automatic": false,
+        "authorityEffect": "NONE",
+        "correctionOrWithdrawalState": "NOT-ACTIVATED",
+        "effect": "PAUSE-FUTURE-DESIGN-REVIEW",
+        "id": "stop:money-lineage-drift",
+        "observed": false,
+        "owner": "OUTSIDE-SYSTEM",
+        "trigger": "Any frozen Transformation, dossier, proposition, option, outcome, node or gate receipt drifts."
+      }
+    ],
+    "theoryBinding": {
+      "assumptionNodeIds": [
+        "causal:money-assumption"
+      ],
+      "claimsCausalTruth": false,
+      "copiedNarrative": false,
+      "desiredOutcomeId": "outcome:money-category-separation",
+      "evaluationNeedNodeId": "causal:money-evaluation",
+      "negativePathwayNodeIds": [
+        "causal:money-negative"
+      ],
+      "optionToOutputEdges": [
+        {
+          "edgeId": "causal-edge:money-bau-output",
+          "fromId": "causal:money-bau",
+          "toId": "causal:money-bau-state"
+        },
+        {
+          "edgeId": "causal-edge:money-glossary-output",
+          "fromId": "causal:money-alt-glossary",
+          "toId": "causal:money-glossary-output"
+        },
+        {
+          "edgeId": "causal-edge:money-map-output",
+          "fromId": "causal:money-alt-linked-map",
+          "toId": "causal:money-map-output"
+        }
+      ],
+      "tested": false,
+      "theoryValidated": false
+    },
+    "title": "Synthetic public-money category-orientation evaluation design",
+    "transformationBinding": {
+      "assumptionNodeIds": [
+        "causal:money-assumption"
+      ],
+      "dossierCanonicalReceipt": "sha256:7889a27ad2dd1f51404ad128dcbc5f4ebe63cca11d5a42b41d198a95d70b83bd",
+      "dossierId": "dossier:public-money-transparency-information-service",
+      "evaluationNeedNodeId": "causal:money-evaluation",
+      "humanGateIds": [
+        "gate:money-evaluation-design",
+        "gate:money-public-authority-review"
+      ],
+      "negativePathwayNodeIds": [
+        "causal:money-negative"
+      ],
+      "optionIds": [
+        "option:money-bau",
+        "option:money-glossary",
+        "option:money-linked-map"
+      ],
+      "propositionCanonicalReceipt": "sha256:dc4181b8179f15a3b33541c57c97e399f41bee23fb335efee9b2342a9f22e538",
+      "transformationOutcomeId": "outcome:money-category-separation",
+      "useAsEvidence": false
+    }
+  }
+]

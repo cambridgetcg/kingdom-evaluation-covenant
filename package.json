@@ -1,0 +1,22 @@
+{
+  "name": "@kingdom/evaluation-covenant",
+  "version": "0.1.0",
+  "description": "Deterministic offline Phase-0 evaluation covenant designs bound to the UK Government Transformation Engine.",
+  "type": "module",
+  "private": true,
+  "license": "UNLICENSED",
+  "engines": {
+    "node": ">=20"
+  },
+  "bin": {
+    "kingdom-evaluation-covenant": "./src/cli.mjs"
+  },
+  "scripts": {
+    "test": "node --test",
+    "validate": "node ./src/cli.mjs validate",
+    "build": "node ./src/cli.mjs build",
+    "build:check": "node ./src/cli.mjs check",
+    "overview": "node ./src/cli.mjs overview",
+    "check": "node --check ./src/io.mjs && node --check ./src/schema-validator.mjs && node --check ./src/evaluation-covenant.mjs && node --check ./src/cli.mjs && node ./src/cli.mjs check"
+  }
+}

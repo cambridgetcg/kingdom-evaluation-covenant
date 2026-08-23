@@ -1,0 +1,291 @@
+{
+  "asOf": "2026-08-23",
+  "authorship": {
+    "compiledBy": "codex-assisted-publication",
+    "exactTextHumanReviewed": false,
+    "humanDirectionRecorded": true,
+    "humanReviewCompleted": false,
+    "humanReviewRequired": true,
+    "origin": "maintainer-authorized-assisted-publication"
+  },
+  "boundaries": {
+    "acceptsFreeText": false,
+    "accountAccess": false,
+    "adoption": false,
+    "advice": false,
+    "approval": false,
+    "artifactAcquisition": false,
+    "artifactExecution": false,
+    "automatedAction": false,
+    "automatedDecision": false,
+    "automaticProgression": false,
+    "causalClaim": false,
+    "credentialAccess": false,
+    "credentialCollection": false,
+    "dataCollection": false,
+    "datasetAcquisition": false,
+    "decisionAuthority": false,
+    "deployment": false,
+    "economicConclusion": false,
+    "eligibilityDetermination": false,
+    "ethicsApproval": false,
+    "evaluationRegistration": false,
+    "evaluationResult": false,
+    "evaluationRun": false,
+    "externalEffects": false,
+    "filing": false,
+    "governmentAffiliation": false,
+    "identityAccess": false,
+    "identityCollection": false,
+    "legalAdvice": false,
+    "legalConclusion": false,
+    "liabilityDetermination": false,
+    "liveData": false,
+    "llmRuntime": false,
+    "mcpExposure": false,
+    "networkAtBuildOrRuntime": false,
+    "officialEndorsement": false,
+    "optionSelection": false,
+    "participantRecruitment": false,
+    "payment": false,
+    "personalData": false,
+    "personalDataCollection": false,
+    "preferredOption": false,
+    "procurement": false,
+    "publicForm": false,
+    "ranking": false,
+    "recommendation": false,
+    "runtimeFetch": false,
+    "scalarScore": false,
+    "sealCreated": false,
+    "spending": false,
+    "submission": false,
+    "taxAdvice": false,
+    "taxConclusion": false,
+    "transaction": false,
+    "trialAuthority": false,
+    "trialPlanCreated": false,
+    "trialRun": false,
+    "useAuthority": false,
+    "valueForMoneyConclusion": false
+  },
+  "contractVersion": "0.1.0",
+  "covenantState": {
+    "adoptionEffect": "NONE",
+    "approvalState": "NOT-APPROVED",
+    "designState": "DRAFT",
+    "registrationState": "UNREGISTERED",
+    "resultState": "NO-RESULT",
+    "runState": "NO-RUN",
+    "sealState": "UNSEALED",
+    "useAuthorityEffect": "NONE"
+  },
+  "freshness": {
+    "historicalStateAfterDeadline": "HISTORICAL-DESIGN-ONLY",
+    "nextReviewDue": "2026-09-21",
+    "readerClockEmbedded": false,
+    "releaseGateRequired": true,
+    "reviewDeadlineInheritedFromTransformation": true,
+    "stateAtPublication": "WITHIN-REVIEW-WINDOW",
+    "mutableAliasPolicy": "REPLACE-OR-RETIRE"
+  },
+  "interpretationRules": [
+    "monitoring-is-not-evaluation",
+    "output-is-not-outcome",
+    "change-is-not-attribution",
+    "process-is-not-impact",
+    "impact-is-not-value-for-money",
+    "null-is-not-no-effect-failure-success-or-equivalence",
+    "no-result-is-not-null",
+    "aggregate-cannot-erase-subgroup-harm-or-missingness",
+    "measure-is-not-target",
+    "participation-is-not-representation-consent-or-endorsement",
+    "registration-seal-quality-assurance-and-peer-review-are-not-truth-approval-or-authority",
+    "synthetic-design-cannot-establish-live-effects",
+    "legal-tax-public-money-and-competence-conclusions-remain-outside-system",
+    "evidence-cannot-automatically-adopt-continue-withdraw-or-authorize-use"
+  ],
+  "lineage": {
+    "baseGovernment": {
+      "asOf": "2026-08-21",
+      "byteReceipt": "sha256:1751b2ac331d6a1283cbf57b5b6961d9071f528298f97589fcbd7cf36407e139",
+      "bytes": 196005,
+      "canonicalReceipt": "sha256:cc2c22e356cef0160ed5da1e2fd756bad5801f574c4cb064dec157b9207b9739",
+      "canonicalUrl": "https://thekingdom.dev/government/uk-government-engine-2026-08-21.json",
+      "contextMode": "transitive-validation-context-only",
+      "path": "vendor/government-engine/government-2026-08-21.json",
+      "schema": "kingdom.government-engine-public-snapshot/0.1",
+      "useAsEvidence": false
+    },
+    "dossierBindings": [
+      {
+        "assumptionNodeIds": [
+          "causal:four-nation-assumption"
+        ],
+        "dossierCanonicalReceipt": "sha256:251d9dc081d182ff7d0a843c7139f882f3b76551591f99253cdd63877cc47e64",
+        "dossierId": "dossier:four-nation-public-service-information",
+        "evaluationNeedNodeId": "causal:four-nation-evaluation",
+        "gateIds": [
+          "gate:four-nation-competence-review",
+          "gate:four-nation-service-review"
+        ],
+        "negativePathwayNodeIds": [
+          "causal:four-nation-negative"
+        ],
+        "optionIds": [
+          "option:four-nation-bau",
+          "option:four-nation-branches",
+          "option:four-nation-matrix"
+        ],
+        "outcomeId": "outcome:four-nation-divergence-visible",
+        "propositionCanonicalReceipt": "sha256:f86be1c08e235fc20ea9727356ca1676bd8563d092de987ff901ba2d63fa0a84"
+      },
+      {
+        "assumptionNodeIds": [
+          "causal:notice-assumption"
+        ],
+        "dossierCanonicalReceipt": "sha256:f891d80e614160f64061231d592af567e0800a55a232e01bbcddaf406f17ff29",
+        "dossierId": "dossier:hmrc-decision-notice-explanatory-content",
+        "evaluationNeedNodeId": "causal:notice-evaluation",
+        "gateIds": [
+          "gate:notice-accessibility-research",
+          "gate:notice-specialist-tax-legal-review"
+        ],
+        "negativePathwayNodeIds": [
+          "causal:notice-negative"
+        ],
+        "optionIds": [
+          "option:notice-bau",
+          "option:notice-layered",
+          "option:notice-route-map"
+        ],
+        "outcomeId": "outcome:notice-route-distinction",
+        "propositionCanonicalReceipt": "sha256:aec1cdc5a5f0b258667476a24b707fe48ee8fea8aeb613d441f38b3d6130b850"
+      },
+      {
+        "assumptionNodeIds": [
+          "causal:money-assumption"
+        ],
+        "dossierCanonicalReceipt": "sha256:7889a27ad2dd1f51404ad128dcbc5f4ebe63cca11d5a42b41d198a95d70b83bd",
+        "dossierId": "dossier:public-money-transparency-information-service",
+        "evaluationNeedNodeId": "causal:money-evaluation",
+        "gateIds": [
+          "gate:money-evaluation-design",
+          "gate:money-public-authority-review"
+        ],
+        "negativePathwayNodeIds": [
+          "causal:money-negative"
+        ],
+        "optionIds": [
+          "option:money-bau",
+          "option:money-glossary",
+          "option:money-linked-map"
+        ],
+        "outcomeId": "outcome:money-category-separation",
+        "propositionCanonicalReceipt": "sha256:dc4181b8179f15a3b33541c57c97e399f41bee23fb335efee9b2342a9f22e538"
+      }
+    ],
+    "mode": "exact-synthetic-design-context-only",
+    "transformationGuide": {
+      "byteReceipt": "sha256:cf025c3ed0baaca5ef08dc5ba5187f50ae1aa8596878f1a28e34be7d62a1d9c8",
+      "bytes": 6770,
+      "path": "vendor/transformation-engine/UK-GOVERNMENT-TRANSFORMATION-ENGINE-v0.1.md",
+      "url": "https://thekingdom.dev/UK-GOVERNMENT-TRANSFORMATION-ENGINE-v0.1.md"
+    },
+    "transformationSchema": {
+      "byteReceipt": "sha256:9949457e87db784c734b195195c7f3cdc2afb138ada400f61583ebd0a6cf7be6",
+      "bytes": 47800,
+      "canonicalReceipt": "sha256:b7118c1cd2f226b276b02f21bb080d3e3e5aae6aa26bc03e74277a5d1844c5c9",
+      "path": "vendor/transformation-engine/public-snapshot.schema.json",
+      "url": "https://thekingdom.dev/government/transformations/schemas/v0.1/public-snapshot.schema.json"
+    },
+    "transformationSnapshot": {
+      "asOf": "2026-08-21",
+      "byteReceipt": "sha256:fef3ca1719cb7fd02c09c558db6f239cad29a173b921763a10a59e042a4cdf00",
+      "bytes": 83915,
+      "canonicalReceipt": "sha256:7d9df6d5b6292b46abfbc076847f7e033b8d889be7a868dcbeac5d901b75c715",
+      "canonicalUrl": "https://thekingdom.dev/government/uk-government-transformation-engine-2026-08-21.json",
+      "path": "vendor/transformation-engine/transformations-2026-08-21.json",
+      "producerTag": "https://github.com/cambridgetcg/kingdom-government-transformation-engine/tree/v0.1.0",
+      "schema": "kingdom.government-transformation-orientation-public-snapshot/0.1"
+    },
+    "useAsEvidence": false
+  },
+  "phase": {
+    "id": "0-static-synthetic-design",
+    "scope": "evaluation-design-only"
+  },
+  "protocol": "kingdom.evaluation-covenant-public-snapshot/0.1",
+  "publisher": "KINGDOM",
+  "relatedResources": [
+    {
+      "authority": false,
+      "contentProjected": false,
+      "duplicatedContent": false,
+      "evidence": false,
+      "id": "related:trial-chamber",
+      "navigationOnly": true,
+      "relationship": "adjacent-artifact-trial-planning-system",
+      "url": "https://thekingdom.dev/trials.json"
+    },
+    {
+      "authority": false,
+      "contentProjected": false,
+      "duplicatedContent": false,
+      "evidence": false,
+      "id": "related:transformation-engine",
+      "navigationOnly": true,
+      "relationship": "frozen-design-context-producer",
+      "url": "https://github.com/cambridgetcg/kingdom-government-transformation-engine/tree/v0.1.0"
+    }
+  ],
+  "sourceLedgerPolicy": {
+    "bodyOrRawHashRetained": false,
+    "checkedDateProvesCurrentLegalEffect": false,
+    "contentCopied": false,
+    "exactTextHumanReviewed": false,
+    "genericOfficialHostIsEvidence": false,
+    "methodOrGovernanceOrientationOnly": true,
+    "rightsOrReuseInferred": false,
+    "sourceCanSupportAuthority": false,
+    "sourceCanSupportDossierOutcome": false,
+    "sourceCanSupportEstimand": false,
+    "sourceCanSupportResult": false,
+    "sourceMayOrientEstimandSpecification": true,
+    "sourceCannotSupplyEmpiricalEstimandOrIdentification": true,
+    "urlObservationProvesEndorsement": false
+  },
+  "title": "KINGDOM Evaluation Covenant: Synthetic Transformation Designs",
+  "trialChamberSeparation": {
+    "duplicatesTrialPlan": false,
+    "evaluationCovenantOwns": "intervention-level-evaluation-design-only",
+    "forbiddenTrialPlanFields": [
+      "artifact",
+      "artifactPin",
+      "criterionRules",
+      "evaluationPlanId",
+      "evaluationRequestId",
+      "execution",
+      "fixtures",
+      "passingEffect",
+      "preflight",
+      "referralId",
+      "resourceEnvelope",
+      "runner",
+      "trialAuthority",
+      "trialRun"
+    ],
+    "trialChamberCompatibility": "not-applicable",
+    "trialChamberOwns": "artifact-and-source-trial-planning",
+    "trialChamberPlanRefs": []
+  },
+  "urls": {
+    "canonical": "https://thekingdom.dev/evaluation/uk-government-transformation-evaluation-covenants-2026-08-23.json",
+    "guide": "https://thekingdom.dev/EVALUATION-COVENANT-v0.1.md",
+    "human": "https://thekingdom.dev/evaluation-covenant/",
+    "mutableAlias": "https://thekingdom.dev/evaluation-covenants.json",
+    "producer": "https://github.com/cambridgetcg/kingdom-evaluation-covenant/tree/v0.1.0",
+    "repository": "https://github.com/cambridgetcg/kingdom-evaluation-covenant",
+    "schema": "https://thekingdom.dev/evaluation/schemas/v0.1/public-snapshot.schema.json"
+  }
+}
